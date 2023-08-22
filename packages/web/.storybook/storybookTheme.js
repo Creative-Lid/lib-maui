@@ -6,7 +6,7 @@ import logo from './images/MAUI-Logo-Full.svg';
 export default create({
     base: 'light',
     brandTitle: 'React Custom Component - UI',
-    brandUrl: 'https://www.optimo-it.com',
+    brandUrl: 'https://www.creativelid.com',
     brandImage: logo,
     brandTarget: '_self',
 });

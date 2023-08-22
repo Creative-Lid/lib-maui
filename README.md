@@ -1,5 +1,5 @@
 
-# Getting Started with the Optimo Component Library
+# Getting Started with Material Advanced User Interface (MAUI)
 
 On Windows, install vsts-npm-auth:
 `npm i -g vsts-npm-auth`

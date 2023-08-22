@@ -33,7 +33,7 @@ describe('assembleLink()', () => {
     it('returns anchor HTML element with correct query params', () => {
         render(
             assembleLink(
-                { q: 'optimo' },
+                { q: 'creative lid' },
                 'https://www.google.com/search',
                 'Google',
             ),
@@ -41,7 +41,9 @@ describe('assembleLink()', () => {
         const anchor = screen.getByRole<HTMLAnchorElement>('link', {
             name: 'Google',
         });
-        expect(anchor.href).toBe('https://www.google.com/search?q=optimo');
+        expect(anchor.href).toBe(
+            'https://www.google.com/search?q=creative+lid',
+        );
     });
 
     it('returns anchor HTML element with localhost href when baseUrl is not provided', () => {
