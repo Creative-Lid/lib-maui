@@ -10,7 +10,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 
-import { getWeek } from '@maui/utils/Date';
+import { getWeek } from '@creativelid/maui-utils/Date';
 import {
     IGroup,
     TOnEventClick,

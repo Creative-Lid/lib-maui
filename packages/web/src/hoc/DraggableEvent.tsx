@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { IEvent } from '../components/Scheduler/SchedulerTypes';
-import { END_DATE, EVENT_ID, START_DATE } from '@maui/constants/Scheduler';
+import { END_DATE, EVENT_ID, START_DATE } from '@creativelid/maui-constants/Scheduler';
 
 export interface Props {
     children: React.ReactNode;

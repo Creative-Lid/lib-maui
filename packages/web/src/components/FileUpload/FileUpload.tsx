@@ -15,8 +15,8 @@ import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 
 import Button from '../Button';
-import { Grey } from '@maui/styles/colors';
-import { convertToBytes, parseFloat } from '@maui/utils/Number';
+import { Grey } from '@creativelid/maui-styles/colors';
+import { convertToBytes, parseFloat } from '@creativelid/maui-utils/Number';
 
 export interface FileUploadProps {
     acceptedFilesHeader?: string; // default string

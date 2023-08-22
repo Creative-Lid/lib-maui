@@ -2,7 +2,7 @@ import React from 'react';
 
 import Typography from '@mui/material/Typography';
 
-import { formatTimeRange } from '@maui/utils/Date';
+import { formatTimeRange } from '@creativelid/maui-utils/Date';
 
 import EventContainer from '../../hoc/EventContainer';
 import { IEvent, TOnEventClick } from './SchedulerTypes';

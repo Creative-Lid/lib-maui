@@ -5,8 +5,8 @@ import { styled } from '@mui/material';
 import { alpha } from '@mui/material';
 
 import { TOnEventUpdate, IEvent } from '../components/Scheduler/SchedulerTypes';
-import { END_DATE, EVENT_ID, START_DATE } from '@maui/constants/Scheduler';
-import Grey from '@maui/styles/colors/Grey';
+import { END_DATE, EVENT_ID, START_DATE } from '@creativelid/maui-constants/Scheduler';
+import Grey from '@creativelid/maui-styles/colors/Grey';
 
 export interface TdEventDropZoneProps {
     cellDate: Date;

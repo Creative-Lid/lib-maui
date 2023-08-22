@@ -29,7 +29,7 @@ import {
     getFirstDayOfWeek,
     getLastDayOfWeek,
     getYearRange,
-} from '@maui/utils/Date';
+} from '@creativelid/maui-utils/Date';
 import Button from '../Button';
 
 export interface SchedulerProps {

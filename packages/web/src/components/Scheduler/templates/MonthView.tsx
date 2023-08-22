@@ -19,7 +19,7 @@ import {
     TEventRenderer,
     View,
 } from '../SchedulerTypes';
-import { getMonthByWeeks } from '@maui/utils/Date';
+import { getMonthByWeeks } from '@creativelid/maui-utils/Date';
 import DraggableEvent from '../../../hoc/DraggableEvent';
 import TdEventDropZone from '../../../hoc/TdEventDropZone';
 import MonthViewEvent from '../MonthViewEvent';

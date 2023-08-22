@@ -2,16 +2,16 @@
 
 ## Installation
 
-MAUI is available as an [npm package](https://www.npmjs.com/package/@maui/web).
+MAUI is available as an [npm package](https://www.npmjs.com/package/@creativelid/maui-web).
 
 **npm:**
 
 ```bash
-npm install @MAUI/web
+npm install @creativelid/maui-web
 ```
 
 **yarn:**
 
 ```bash
-yarn add @maui/web
+yarn add @creativelid/maui-web
 ```

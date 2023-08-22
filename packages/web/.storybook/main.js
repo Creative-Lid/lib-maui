@@ -38,7 +38,7 @@ module.exports = {
         // Storybook uses its own webpack config, so we need to merge our config with it
         // See https://storybook.js.org/docs/configurations/custom-webpack-config/
 
-        // Add typescript loader to process TS-files from other packages (i.e. @maui/utils, @maui/styles)
+        // Add typescript loader to process TS-files from other packages (i.e. @creativelid/maui-utils, @creativelid/maui-styles)
         config.module.rules.push({
             test: /\.(ts|tsx)$/,
             use: [

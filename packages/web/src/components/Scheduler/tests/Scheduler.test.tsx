@@ -22,13 +22,13 @@ import {
     getLastDayOfWeek,
     getMonthByWeeks,
     formatTimeRange,
-} from '@maui/utils/Date';
+} from '@creativelid/maui-utils/Date';
 
 import {
     END_DATE,
     EVENT_ID,
     START_DATE,
-} from '@maui/constants/Scheduler';
+} from '@creativelid/maui-constants/Scheduler';
 
 import { IEvent } from '../SchedulerTypes';
 

@@ -4,8 +4,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 
-import { MauiUiTheme } from '@maui/styles';
-import { MauiUiBootstrapTheme } from '@maui/styles';
+import { MauiUiTheme } from '@creativelid/maui-styles';
+import { MauiUiBootstrapTheme } from '@creativelid/maui-styles';
 import { Theme } from 'storybook-addon-themes/dist/models/Theme';
 import CustomMDXTemplate from './custom-mdx-template';
 import { ScrollToTop } from '../src';

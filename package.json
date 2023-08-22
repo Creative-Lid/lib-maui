@@ -44,6 +44,6 @@
     ]
   },
   "dependencies": {
-    "@creativelid/maui-web": "^0.0.1"
+    "@creativelid/maui-web": "*"
   }
 }

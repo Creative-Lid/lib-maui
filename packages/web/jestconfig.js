@@ -12,10 +12,10 @@ module.exports = {
     moduleNameMapper: {
         ...pathsToModuleNameMapper(
             {
-                '@maui/constants/*': ['../../constants/*'],
-                '@maui/styles/*': ['../../styles/*'],
-                '@maui/web/*': ['../../web/src/*'],
-                '@maui/utils/*': ['../../utils/*'],
+                '@creativelid/maui-constants/*': ['../../constants/*'],
+                '@creativelid/maui-styles/*': ['../../styles/*'],
+                '@creativelid/maui-web/*': ['../../web/src/*'],
+                '@creativelid/maui-utils/*': ['../../utils/*'],
             },
             {
                 prefix: '<rootDir>/src/',
