@@ -7,8 +7,8 @@ import { LocalizationProvider } from '@mui/x-date-pickers';
 import { MauiTheme } from '@creativelid/maui-styles';
 import { MauiBootstrapTheme } from '@creativelid/maui-styles';
 import { Theme } from 'storybook-addon-themes/dist/models/Theme';
-import CustomMDXTemplate from './custom-mdx-template';
-import { ScrollToTop } from '../src';
+
+// import CustomMDXTemplate from './custom-mdx-template';
 
 const themes = { 'MAUI': MauiTheme, Bootstrap: MauiBootstrapTheme };
 const currentTheme = localStorage.getItem('currentTheme');
