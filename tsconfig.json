@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist",
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "jsx": "react-jsx",
+        "module": "ESNext", // Webpack tree-shaking is not working with CommonJS
+        "skipLibCheck": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "target": "es5",
+        "moduleResolution": "node"
+    },
+    "references": [
+        { "path": "packages/constants" },
+        { "path": "packages/styles" },
+        { "path": "packages/web" },
+        { "path": "packages/utils" }
+    ],
+    "exclude": ["dist/**/*", "node_modules"],
+    "files": [] // https://www.typescriptlang.org/docs/handbook/project-references.html#overall-structure
+}

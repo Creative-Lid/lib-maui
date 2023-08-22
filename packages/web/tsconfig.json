@@ -1,0 +1,13 @@
+{
+    "extends": "../../tsconfig",
+    "compilerOptions": {
+        "baseUrl": "./src/",
+        "composite": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "tsBuildInfoFile": "./tsconfig.tsbuildinfo" // Specify the location of the tsbuildinfo file to prevent it from being written to the dist folder
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist/**/*", "**/*.stories.*", "**/*.test.*", "**/mocks"],
+    "references": []
+}

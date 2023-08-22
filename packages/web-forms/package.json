@@ -1,0 +1,18 @@
+{
+  "author": "Creative Lid LLC",
+  "description": "Support common forms validation in Material Advanced User Interface (MAUI).",
+  "dependencies": {
+    "@maui/web": "^0.0.1",
+    "react-hook-form": "^7.44.3"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@maui/web-forms",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "npm run clean:local && tsc -b && npx shx cp package.json dist",
+    "clean:local": "rimraf tsconfig.tsbuildinfo dist",
+    "lint": "eslint ."
+  },
+  "version": "0.0.1"
+}

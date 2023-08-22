@@ -1,0 +1,30 @@
+{
+  "author": "Creative Lid LLC",
+  "description": "Constants for Material Advanced User Interface (MAUI).",
+  "devDependencies": {
+    "typescript": "^4.8.1-rc"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "/index.js",
+  "module": "/index.js",
+  "name": "@maui/constants",
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Creative-Lid/lib-maui"
+  },
+  "scripts": {
+    "test": "echo constants tests",
+    "build": "npm run clean:local && tsc -b && npx shx cp package.json dist",
+    "build:local": "npm run build && cd dist && npm pack",
+    "clean:local": "rimraf tsconfig.tsbuildinfo dist",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "eslint ."
+  },
+  "sideEffects": false,
+  "types": "index.d.ts",
+  "version": "0.0.1"
+}

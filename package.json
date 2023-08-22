@@ -1,0 +1,49 @@
+{
+  "author": "Creative Lid LLC",
+  "description": "Material Advanced User Interface (MAUI) is a React component library based on MUI.",
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lerna": "^7.1.5",
+    "rimraf": "^3.0.2",
+    "shx": "^0.3.4",
+    "storybook-addon-styled-component-theme": "^2.0.0"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "name": "lib-maui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Creative-Lid/lib-maui"
+  },
+  "scripts": {
+    "build": "npm run clean:local && lerna run build",
+    "build-storybook": "cd packages/web && npm run build-storybook",
+    "build:local": "lerna run build:local",
+    "cache-clean-install:local": "rimraf tsconfig.tsbuildinfo package-lock.json node_modules && npm cache clean --force && npm install && lerna run clean:local && lerna run build:local",
+    "clean-install:local": "npm ci && lerna run clean:local && lerna run build:local",
+    "clean:local": "lerna run clean:local",
+    "diff": "lerna diff",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "lerna run lint",
+    "new-version": "lerna version --conventional-commits --yes",
+    "start-storybook": "cd packages/web && npm run start-storybook",
+    "test": "lerna run test",
+    "postversion": "git push --follow-tags origin"
+  },
+  "sideEffects": false,
+  "version": "0.0.1",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "dependencies": {
+    "@maui/web": "^0.0.1"
+  }
+}

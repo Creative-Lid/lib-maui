@@ -1,0 +1,305 @@
+import { Meta } from '@storybook/blocks';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import { ThemeProvider } from '@mui/material/styles';
+import { MauiUiTheme } from '@maui/styles';
+import { styled } from '@mui/material/styles';
+import { Divider } from '@maui/web';
+
+<Meta title='Theme Palette' />
+
+<ThemeProvider theme={MauiUiTheme}>
+    <Container maxWidth='lg'>
+        <Grid container spacing={2}>
+            <Grid item xs={12}>
+                <Typography variant='h1' gutterBottom>Theme Palette</Typography>
+
+                <Typography variant='subtitle1' gutterBottom>The theme colors are set and based around the USPS brand colors. The useage of the palette colors can be seen below.</Typography>
+            </Grid>
+                        
+            <Grid item xs={12}>
+                <Typography variant='subtitle1'>Primary</Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.primary.light}`, backgroundColor: theme.palette.primary.light})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.primary.light</Typography>
+                        <Typography variant='body2'>#C2C2D1</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.primary.main}`, backgroundColor: theme.palette.primary.main})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.primary.main</Typography>
+                        <Typography variant='body2'>#333366</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.primary.dark}`, backgroundColor: theme.palette.primary.dark})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.primary.dark</Typography>
+                        <Typography variant='body2'>#141438</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12}>
+                <Typography variant='subtitle1'>Secondary</Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.secondary.light}`, backgroundColor: theme.palette.secondary.light})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.secondary.light</Typography>
+                        <Typography variant='body2'>#999999</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.secondary.main}`, backgroundColor: theme.palette.secondary.main})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.secondary.main</Typography>
+                        <Typography variant='body2'>#595959</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.secondary.dark}`, backgroundColor: theme.palette.secondary.dark})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.secondary.dark</Typography>
+                        <Typography variant='body2'>#212529</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12}>
+                <Typography variant='subtitle1'>Error</Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.error.light}`, backgroundColor: theme.palette.error.light})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.error.light</Typography>
+                        <Typography variant='body2'>#EE5E64</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.error.main}`, backgroundColor: theme.palette.error.main})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.error.main</Typography>
+                        <Typography variant='body2'>#E71921</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.error.dark}`, backgroundColor: theme.palette.error.dark})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.error.dark</Typography>
+                        <Typography variant='body2'>#E01218</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12}>
+                <Typography variant='subtitle1'>Warning</Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.warning.light}`, backgroundColor: theme.palette.warning.light})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.warning.light</Typography>
+                        <Typography variant='body2'>#FFCD70</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.warning.main}`, backgroundColor: theme.palette.warning.main})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.warning.main</Typography>
+                        <Typography variant='body2'>#FFB733</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.warning.dark}`, backgroundColor: theme.palette.warning.dark})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.warning.dark</Typography>
+                        <Typography variant='body2'>#FFA727</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12}>
+                <Typography variant='subtitle1'>Info</Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.info.light}`, backgroundColor: theme.palette.info.light})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.info.light</Typography>
+                        <Typography variant='body2'>#729DC8</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.info.main}`, backgroundColor: theme.palette.info.main})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.info.main</Typography>
+                        <Typography variant='body2'>#3573B1</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.info.dark}`, backgroundColor: theme.palette.info.dark})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.info.dark</Typography>
+                        <Typography variant='body2'>#2860A1</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12}>
+                <Typography variant='subtitle1'>Success</Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.success.light}`, backgroundColor: theme.palette.success.light})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.success.light</Typography>
+                        <Typography variant='body2'>#64AB7F</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.success.main}`, backgroundColor: theme.palette.success.main})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.success.main</Typography>
+                        <Typography variant='body2'>#218748</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.success.dark}`, backgroundColor: theme.palette.success.dark})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.success.dark</Typography>
+                        <Typography variant='body2'>#187438</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12}>
+                <Typography variant='subtitle1'>Common</Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.common.white})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.common.white</Typography>
+                        <Typography variant='body2'>#FFFFFF</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.common.black})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.common.black</Typography>
+                        <Typography variant='body2'>#000000</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={4}>
+                <Stack spacing={2} direction='row'>
+                    <Stack>
+                        <Box sx={(theme) => ({width: 48, height: 48, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.background.paper}`, backgroundColor: theme.palette.background.paper})}></Box>
+                    </Stack>
+                    <Stack spacing={0} direction='column'>
+                        <Typography variant='body1'>palette.background.paper</Typography>
+                        <Typography variant='body2'>#F7F7F7</Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+        </Grid>
+    </Container>
+</ThemeProvider>

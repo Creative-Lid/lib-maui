@@ -1,0 +1,32 @@
+import { Meta } from '@storybook/blocks';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Alert from '@mui/material/Alert';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import { ThemeProvider } from '@mui/material/styles';
+import { MauiUiTheme } from '@maui/styles';
+import { styled } from '@mui/material/styles';
+import { Divider } from '@maui/web';
+
+<Meta title='Introduction' />
+
+<ThemeProvider theme={MauiUiTheme}>
+    <Container maxWidth='lg'>
+        <Grid container spacing={2}>
+            <Grid item xs={12}>
+                <Typography variant='h1' gutterBottom>Welcome to React Custom Components - UI (MAUI)</Typography>
+
+                <Typography variant='subtitle1' gutterBottom>MAUI is a component library that is based around [Material UI (MUI)](https://mui.com/), which is a library of React UI components that implements Google's Material Design. MUI is an open-source React component library that implements [Google's Material Design](https://m2.material.io/). Learn more about [MUI](https://mui.com/material-ui/getting-started/).</Typography>
+
+                <Typography variant='body1' gutterBottom>This project came to be since there are multiple libraries that we found ourselves constantly including in projects and wanted a way to not only include packages and dependencies in all projects that we continioutly use, but to have a base theme, extend some of the beautiful MUI components to do even more than what they already do out of the box, and include building completely new components that utilize MUI components to keep stylying consistent across an application.</Typography>
+
+                <Divider spacer />
+
+                <Alert severity='info' icon={false}>Check out [Project dependencies](/docs/project-dependencies--docs).</Alert>
+            </Grid>
+        </Grid>
+    </Container>
+</ThemeProvider>

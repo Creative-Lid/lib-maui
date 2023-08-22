@@ -1,0 +1,12 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "composite": true,
+        "outDir": "./dist",
+        "tsBuildInfoFile": "./tsconfig.tsbuildinfo" // Specify the location of the tsbuildinfo file to prevent it from being written to the dist folder
+    },
+    "include": ["**/*"],
+    "exclude": ["dist/**/*"],
+    "references": []
+}

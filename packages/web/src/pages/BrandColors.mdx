@@ -1,0 +1,518 @@
+import { Meta } from '@storybook/blocks';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Alert from '@mui/material/Alert';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import { ThemeProvider } from '@mui/material/styles';
+import { MauiUiTheme } from '@maui/styles';
+import { styled } from '@mui/material/styles';
+import { Divider } from '@maui/web';
+
+<Meta title='Brand Colors' />
+
+<ThemeProvider theme={MauiUiTheme}>
+    <Container maxWidth='lg'>
+        <Grid container spacing={2}>
+            <Grid item xs={12}>
+                <Typography variant='h1' gutterBottom>Brand Colors</Typography>
+
+                <Typography variant='subtitle1' gutterBottom>The correct use of the USPS® brand colors is important to maintain consistency across our digital properties. USPS colors are instantly recognizable and a part of our heritage and personality.</Typography>
+                * Use only the USPS digital color palette
+                * Follow accessibility and contrast requirements
+                * Use Secondary Palette proportionally
+
+                <Alert severity='info' icon={false}>See the [Theme Palette](/docs/theme-palette--docs) to better understand how the Brand Colors are set and utilized within the theme and components.</Alert>
+            </Grid>
+
+            <Grid item xs={12}>
+                <Divider />
+            </Grid>
+
+            <Grid item xs={12}>
+                <Typography variant='h3' gutterBottom>Primary Palette</Typography>
+                <Typography variant='body1' gutterBottom>Our primary colors should be used prominently throughout USPS digital properties.</Typography>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.primary.main}`, backgroundColor: theme.palette.primary.main})}></Box>
+                    <Box>
+                        <Typography variant='body1'>USPS Digital Blue: #333366</Typography>
+                        <Typography variant='caption'>palette.primary.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Principle Color</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.common.white})}></Box>
+                    <Box>
+                        <Typography variant='body1'>White: #FFFFFF</Typography>
+                        <Typography variant='caption'>palette.common.white</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Background</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.common.black})}></Box>
+                    <Box>
+                        <Typography variant='body1'>Text Black: #000000</Typography>
+                        <Typography variant='caption'>palette.common.black</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Primary body text color</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12}>
+                <Divider />
+            </Grid>
+
+            <Grid item xs={12}>
+                <Typography variant='h3' gutterBottom>Secondary Palette</Typography>
+                <Typography variant='body1' gutterBottom>The Secondary Palette supports the Primary Palette with specific use accent colors, functional grays, and backgrounds.</Typography>
+            </Grid>
+            
+            <Grid item xs={12}>
+                <Typography variant='subtitle1'>Specific Use Colors</Typography>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.error.main}`, backgroundColor: theme.palette.error.main})}></Box>
+                    <Box>
+                        <Typography variant='body1'>USPS Digital Red: #E71921</Typography>
+                        <Typography variant='caption'>palette.error.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Error/Alert Messaging</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Text use only for alerts and error messaging. Limited use as a graphical accent color, including directional accents, alert bars, and error identification.</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.success.main}`, backgroundColor: theme.palette.success.main})}></Box>
+                    <Box>
+                        <Typography variant='body1'>USPS Digital Green: #218748</Typography>
+                        <Typography variant='caption'>palette.success.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Approval, ecommerce/Transaction Buttons</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Used for ecommerce point-of-sale and for indicating positive activities like delivery confirmations and payment submissions.</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.info.main}`, backgroundColor: theme.palette.info.main})}></Box>
+                    <Box>
+                        <Typography variant='body1'>USPS Digital Accent Blue: #3573B1</Typography>
+                        <Typography variant='caption'>palette.info.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Graphics accent and alternative text link color.</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Used in megamenu, for inline links, and where a contrast to USPS Digital Blue is required.</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12}>
+                <Typography variant='subtitle1'>Functional Grays</Typography>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.background.paper}`, backgroundColor: theme.palette.background.paper})}></Box>
+                    <Box>
+                        <Typography variant='body1'>Light Background Gray: #F7F7F7</Typography>
+                        <Typography variant='caption'>palette.background.paper</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Prominent Background Gray</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.grey[200]}`, backgroundColor: theme.palette.grey[200]})}></Box>
+                    <Box>
+                        <Typography variant='body1'>Background Hover Gray: #EDEDED</Typography>
+                        <Typography variant='caption'>palette.grey[200]</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.grey[300]}`, backgroundColor: theme.palette.grey[300]})}></Box>
+                    <Box>
+                        <Typography variant='body1'>Dark Background Gray: #D8D8D8</Typography>
+                        <Typography variant='caption'>palette.grey[300]</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.grey[600]}`, backgroundColor: theme.palette.grey[600]})}></Box>
+                    <Box>
+                        <Typography variant='body1'>Text Hover/Form Field Rules: #999999</Typography>
+                        <Typography variant='caption'>palette.grey[600]</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.grey[700]}`, backgroundColor: theme.palette.grey[700]})}></Box>
+                    <Box>
+                        <Typography variant='body1'>Text Gray: #999999</Typography>
+                        <Typography variant='caption'>palette.grey[700]</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Limited use with certain form elements.</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12}>
+                <Divider />
+            </Grid>
+
+            <Grid item xs={12}>
+                <Typography variant='h3' gutterBottom>Text/Background Combos</Typography>
+                <Typography variant='body1' gutterBottom>The following text/background color combinations meet accessibility color contrast requirements and are the only combinations you should use.</Typography>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.primary.main}`, backgroundColor: theme.palette.primary.main})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.common.white})}>White</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #333366</Typography>
+                        <Typography variant='caption'>palette.primary.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #FFFFFF</Typography>
+                        <Typography variant='caption'>palette.common.white</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.primary.main}`, backgroundColor: theme.palette.primary.main})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.grey[200]})}>Background Hover Gray</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #333366</Typography>
+                        <Typography variant='caption'>palette.primary.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #EDEDED</Typography>
+                        <Typography variant='caption'>palette.grey[200]</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.primary.main}`, backgroundColor: theme.palette.primary.main})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.grey[100]})}>Light Background Gray</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #333366</Typography>
+                        <Typography variant='caption'>palette.primary.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #F7F7F7</Typography>
+                        <Typography variant='caption'>palette.grey[100]</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.error.main}`, backgroundColor: theme.palette.error.main})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.common.white})}>USPS Digital Red</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #E71921</Typography>
+                        <Typography variant='caption'>palette.error.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #FFFFFF</Typography>
+                        <Typography variant='caption'>palette.common.white</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Limited Use</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.success.main}`, backgroundColor: theme.palette.success.main})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.common.white})}>USPS Digital Green</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #218748</Typography>
+                        <Typography variant='caption'>palette.success.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #FFFFFF</Typography>
+                        <Typography variant='caption'>palette.common.white</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Limited Use</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.common.white})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.primary.main})}>USPS Digital Blue</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #FFFFFF</Typography>
+                        <Typography variant='caption'>palette.common.white</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #333366</Typography>
+                        <Typography variant='caption'>palette.primary.main</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.common.white})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.common.black})}>Black</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #FFFFFF</Typography>
+                        <Typography variant='caption'>palette.common.white</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #000000</Typography>
+                        <Typography variant='caption'>palette.common.black</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Limited Use</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.common.white})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.error.main})}>USPS Digital Red</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #FFFFFF</Typography>
+                        <Typography variant='caption'>palette.common.white</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #E71921</Typography>
+                        <Typography variant='caption'>palette.error.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Limited Use</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.common.white})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.info.main})}>USPS Digital Accent Blue</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #FFFFFF</Typography>
+                        <Typography variant='caption'>palette.common.white</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #3573B1</Typography>
+                        <Typography variant='caption'>palette.info.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Limited Use</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.background.paper})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.info.main})}>USPS Digital Accent Blue</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #F7F7F7</Typography>
+                        <Typography variant='caption'>palette.background.paper</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #3573B1</Typography>
+                        <Typography variant='caption'>palette.info.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Limited Use</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.common.black}`, backgroundColor: theme.palette.common.white})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.success.main})}>USPS Digital Green</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #FFFFFF</Typography>
+                        <Typography variant='caption'>palette.common.white</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #218748</Typography>
+                        <Typography variant='caption'>palette.success.main</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body2'>Limited Use</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.background.paper}`, backgroundColor: theme.palette.background.paper})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.primary.main})}>USPS Digital Blue</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #F7F7F7</Typography>
+                        <Typography variant='caption'>palette.background.paper</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #333366</Typography>
+                        <Typography variant='caption'>palette.primary.main</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.background.paper}`, backgroundColor: theme.palette.background.paper})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.common.black})}>Black</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #F7F7F7</Typography>
+                        <Typography variant='caption'>palette.background.paper</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #000000</Typography>
+                        <Typography variant='caption'>palette.common.black</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.background.paper}`, backgroundColor: theme.palette.background.paper})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.info.main})}>USPS Digital Accent Blue</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #F7F7F7</Typography>
+                        <Typography variant='caption'>palette.background.paper</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #3573B1</Typography>
+                        <Typography variant='caption'>palette.info.main</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.grey[200]}`, backgroundColor: theme.palette.grey[200]})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.primary.main})}>USPS Digital Blue</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #EDEDED</Typography>
+                        <Typography variant='caption'>palette.grey[200]</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #333366</Typography>
+                        <Typography variant='caption'>palette.primary.main</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.grey[200]}`, backgroundColor: theme.palette.grey[200]})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.common.black})}>Black</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #EDEDED</Typography>
+                        <Typography variant='caption'>palette.grey[200]</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #000000</Typography>
+                        <Typography variant='caption'>palette.common.black</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.grey[300]}`, backgroundColor: theme.palette.grey[300]})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.primary.main})}>USPS Digital Blue</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #D8D8D8</Typography>
+                        <Typography variant='caption'>palette.grey[300]</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #333366</Typography>
+                        <Typography variant='caption'>palette.primary.main</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+            
+            <Grid item xs={12} sm={4}>
+                <Stack spacing={2} direction='column'>
+                    <Box justifyContent='center' alignItems='center' display='flex' sx={(theme) => ({width: '100%', height: 100, borderRadius: theme.spacing(1), border: `1px solid ${theme.palette.grey[300]}`, backgroundColor: theme.palette.grey[300]})}>
+                        <Typography variant='body1' sx={(theme) => ({padding: theme.spacing(1,2), color: theme.palette.common.black})}>Black</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Background: #D8D8D8</Typography>
+                        <Typography variant='caption'>palette.grey[300]</Typography>
+                    </Box>
+                    <Box>
+                        <Typography variant='body1'>Text: #000000</Typography>
+                        <Typography variant='caption'>palette.common.black</Typography>
+                    </Box>
+                </Stack>
+            </Grid>
+        </Grid>
+    </Container>
+</ThemeProvider>
