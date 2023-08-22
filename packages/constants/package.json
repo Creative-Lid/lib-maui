@@ -8,7 +8,7 @@
   "license": "ISC",
   "main": "/index.js",
   "module": "/index.js",
-  "name": "@maui/constants",
+  "name": "@creativelid/maui-constants",
   "publishConfig": {
     "directory": "dist"
   },
