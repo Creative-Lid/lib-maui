@@ -4,15 +4,15 @@ import { ThemeProvider } from '@mui/material/styles';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 
-import { MauiUiTheme } from '@creativelid/maui-styles';
-import { MauiUiBootstrapTheme } from '@creativelid/maui-styles';
+import { MauiTheme } from '@creativelid/maui-styles';
+import { MauiBootstrapTheme } from '@creativelid/maui-styles';
 import { Theme } from 'storybook-addon-themes/dist/models/Theme';
 import CustomMDXTemplate from './custom-mdx-template';
 import { ScrollToTop } from '../src';
 
-const themes = { 'MAUI': MauiUiTheme, Bootstrap: MauiUiBootstrapTheme };
+const themes = { 'MAUI': MauiTheme, Bootstrap: MauiBootstrapTheme };
 const currentTheme = localStorage.getItem('currentTheme');
-const theme = currentTheme ? themes[currentTheme] : MauiUiTheme;
+const theme = currentTheme ? themes[currentTheme] : MauiTheme;
 
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },

@@ -11,7 +11,7 @@ const defaults = createTheme({
     spacing: 8,
 });
 
-const MauiUiTheme = createTheme({
+const MauiTheme = createTheme({
     ...defaults,
     palette: { ...palette },
     shape: {
@@ -213,4 +213,4 @@ const MauiUiTheme = createTheme({
     },
 });
 
-export default MauiUiTheme;
+export default MauiTheme;

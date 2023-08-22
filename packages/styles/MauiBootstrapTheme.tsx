@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { createTheme } from '@mui/material/styles';
 import common from '@mui/material/colors/common';
 
@@ -11,7 +13,7 @@ import ErrorIcon from '@mui/icons-material/Error';
 import InfoIcon from '@mui/icons-material/Info';
 import WarningIcon from '@mui/icons-material/Warning';
 
-let MauiWebBootstrapTheme = createTheme({
+let MauiBootstrapTheme = createTheme({
     shape: {
         borderRadius: 4,
     },
@@ -98,7 +100,7 @@ let MauiWebBootstrapTheme = createTheme({
     palette: { ...palette },
 });
 
-MauiWebBootstrapTheme = createTheme(MauiWebBootstrapTheme, {
+MauiBootstrapTheme = createTheme(MauiBootstrapTheme, {
     components: {
         MuiAlert: {
             defaultProps: {
@@ -159,11 +161,11 @@ MauiWebBootstrapTheme = createTheme(MauiWebBootstrapTheme, {
                 },
                 icon: {
                     alignItems: 'center',
-                    margin: MauiWebBootstrapTheme.spacing(0),
-                    padding: MauiWebBootstrapTheme.spacing(0, 2),
+                    margin: MauiBootstrapTheme.spacing(0),
+                    padding: MauiBootstrapTheme.spacing(0, 2),
                 },
                 message: {
-                    margin: MauiWebBootstrapTheme.spacing(0.75, 2),
+                    margin: MauiBootstrapTheme.spacing(0.75, 2),
                 },
                 filled: {
                     color: palette.common.white,
@@ -401,7 +403,7 @@ MauiWebBootstrapTheme = createTheme(MauiWebBootstrapTheme, {
                         },
                     },
                     '& #gridQuickFilters': {
-                        marginBottom: MauiWebBootstrapTheme.spacing(-1.5),
+                        marginBottom: MauiBootstrapTheme.spacing(-1.5),
                     },
                 },
             },
@@ -460,9 +462,9 @@ MauiWebBootstrapTheme = createTheme(MauiWebBootstrapTheme, {
                 root: {
                     border: 0,
                     borderRadius: 0,
-                    padding: MauiWebBootstrapTheme.spacing(0, 0.75),
+                    padding: MauiBootstrapTheme.spacing(0, 0.75),
                     '&:not(:first-of-type)::before': {
-                        padding: MauiWebBootstrapTheme.spacing(0, 0.75),
+                        padding: MauiBootstrapTheme.spacing(0, 0.75),
                         color: palette.common.black,
                     },
                     '&.Mui-selected': {
@@ -471,7 +473,7 @@ MauiWebBootstrapTheme = createTheme(MauiWebBootstrapTheme, {
                             borderBottomWidth: 3,
                             borderBottomStyle: 'solid',
                             fontWeight: 700,
-                            paddingBottom: MauiWebBootstrapTheme.spacing(1.25),
+                            paddingBottom: MauiBootstrapTheme.spacing(1.25),
                         },
                     },
                     '&:hover, &.Mui-selected:hover': {
@@ -486,7 +488,7 @@ MauiWebBootstrapTheme = createTheme(MauiWebBootstrapTheme, {
         MuiToolbar: {
             styleOverrides: {
                 root: {
-                    margin: MauiWebBootstrapTheme.spacing(0, 'auto'),
+                    margin: MauiBootstrapTheme.spacing(0, 'auto'),
                     maxWidth: 1340,
                     width: '100%',
                 },
@@ -495,4 +497,4 @@ MauiWebBootstrapTheme = createTheme(MauiWebBootstrapTheme, {
     },
 });
 
-export default MauiWebBootstrapTheme;
+export default MauiBootstrapTheme;

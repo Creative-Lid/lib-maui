@@ -2,10 +2,10 @@ import * as colors from './colors';
 
 export { colors };
 
-export { default as MauiUiTheme } from './MauiUiTheme';
-export * from './MauiUiTheme';
+export { default as MauiTheme } from './MauiTheme';
+export * from './MauiTheme';
 
-export { default as MauiUiBootstrapTheme } from './MauiUiBootstrapTheme';
-export * from './MauiUiBootstrapTheme';
+export { default as MauiBootstrapTheme } from './MauiBootstrapTheme';
+export * from './MauiBootstrapTheme';
 
 export * from './utils';
