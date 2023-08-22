@@ -2,7 +2,7 @@
   "author": "Creative Lid LLC",
   "description": "Support common forms validation in Material Advanced User Interface (MAUI).",
   "dependencies": {
-    "@creativelid/maui-web": "^0.0.4-alpha.3",
+    "@creativelid/maui-web": "^0.0.4",
     "react-hook-form": "^7.44.3"
   },
   "license": "ISC",
@@ -14,6 +14,6 @@
     "clean:local": "rimraf tsconfig.tsbuildinfo dist",
     "lint": "eslint ."
   },
-  "version": "0.0.4-alpha.3",
+  "version": "0.0.4",
   "gitHead": "d785395a2f7c2f9345f748b735771cec9e97515a"
 }
