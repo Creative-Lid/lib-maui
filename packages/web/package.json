@@ -4,9 +4,9 @@
   "dependencies": {
     "@fontsource/palanquin-dark": "^5.0.8",
     "@fontsource/the-nautigal": "^5.0.8",
-    "@maui/constants": "^0.0.1",
-    "@maui/styles": "^0.0.1",
-    "@maui/utils": "^0.0.1",
+    "@maui/constants": "^0.0.2",
+    "@maui/styles": "^0.0.2",
+    "@maui/utils": "^0.0.2",
     "typeface-noto-sans": "^1.1.13"
   },
   "devDependencies": {
@@ -91,5 +91,5 @@
   },
   "sideEffects": false,
   "types": "index.d.ts",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
