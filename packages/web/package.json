@@ -2,9 +2,9 @@
   "author": "Creative Lid LLC <admin@creativelid.com>",
   "description": "Custom and extended MUI components for Material Advanced User Interface (MAUI).",
   "dependencies": {
-    "@creativelid/maui-constants": "^0.0.6",
-    "@creativelid/maui-styles": "^0.0.6",
-    "@creativelid/maui-utils": "^0.0.6",
+    "@creativelid/maui-constants": "^0.0.7",
+    "@creativelid/maui-styles": "^0.0.7",
+    "@creativelid/maui-utils": "^0.0.7",
     "@fontsource/palanquin-dark": "^5.0.8",
     "@fontsource/the-nautigal": "^5.0.8",
     "typeface-noto-sans": "^1.1.13"
@@ -91,6 +91,6 @@
   },
   "sideEffects": false,
   "types": "index.d.ts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "gitHead": "d785395a2f7c2f9345f748b735771cec9e97515a"
 }
