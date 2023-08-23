@@ -80,7 +80,7 @@
   },
   "scripts": {
     "build-storybook": "storybook build",
-    "build": "npm run clean:local && tsc -b && npx shx cp package.json dist",
+    "build": "npm run clean:local && tsc -b && npx shx cp package.json README.md dist",
     "build:local": "npm run build && cd dist && npm pack",
     "clean:local": "rimraf tsconfig.tsbuildinfo dist",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
