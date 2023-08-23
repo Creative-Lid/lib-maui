@@ -42,6 +42,6 @@
   },
   "sideEffects": false,
   "types": "index.d.ts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "gitHead": "d785395a2f7c2f9345f748b735771cec9e97515a"
 }
