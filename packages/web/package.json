@@ -79,7 +79,7 @@
     "url": "https://github.com/Creative-Lid/lib-maui"
   },
   "scripts": {
-    "build-storybook": "storybook build",
+    "build-storybook": "build-storybook -o docs-build",
     "build": "npm run clean:local && tsc -b && npx shx cp package.json README.md dist",
     "build:local": "npm run build && cd dist && npm pack",
     "clean:local": "rimraf tsconfig.tsbuildinfo dist",

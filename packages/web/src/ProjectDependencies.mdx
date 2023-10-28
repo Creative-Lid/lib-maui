@@ -1,85 +1,102 @@
-import { Meta } from '@storybook/blocks';
+import { Meta } from "@storybook/blocks";
 
-<Meta title='Project Dependencies' />
+import { ThemeProvider } from "@mui/material/styles";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 
-# Project dependencies
+import { MauiTheme } from "@creativelid/maui-styles";
 
-## Dependencies
+<Meta title="Project Dependencies" />
 
-### Fonts
+<ThemeProvider theme={MauiTheme}>
+    <Container maxWidth='lg'>
+        <Grid container spacing={2}>
+            <Grid item xs={12}>
+                <Typography variant='h3' component='h1' gutterBottom>Project dependencies</Typography>
 
--   @fontsource/palanquin-dark
--   @fontsource/the-nautigal
+                <Typography variant='h4' variantMapping={{h4: 'h2'}} gutterBottom>Dependencies</Typography>
 
-## Dev Dependencies
+                <Typography variant='h5' variantMapping={{h5: 'h3'}} gutterBottom>Fonts</Typography>
 
-### General
+                - @fontsource/palanquin-dark
+                - @fontsource/the-nautigal
 
--   @babel/core
--   babel-loader
--   prettier
--   react
--   react-dom
--   react-hook-form
--   react-scripts
--   ts-jest
--   ts-loader
--   tsconfig-paths-webpack-plugin
--   typescript
+                ## Dev Dependencies
 
-### Storybook
+                ### General
 
--   @storybook/addon-a11y
--   @storybook/addon-actions
--   @storybook/addon-docs
--   @storybook/addon-essentials
--   @storybook/addon-interactions
--   @storybook/addon-links
--   @storybook/preset-create-react-app
--   @storybook/react
--   @storybook/react-webpack5
--   @storybook/testing-library
--   storybook
--   storybook-addon-themes
--   storybook-dark-mode
+                - @babel/core
+                - babel-loader
+                - prettier
+                - react
+                - react-dom
+                - react-hook-form
+                - react-scripts
+                - ts-jest
+                - ts-loader
+                - tsconfig-paths-webpack-plugin
+                - typescript
 
-### Testing
+                ### Storybook
 
--   @testing-library/dom
--   @testing-library/jest-dom
--   @testing-library/react
--   @testing-library/user-event
--   jest
--   jest-environment-jsdom
--   jest-junit
+                - @storybook/addon-a11y
+                - @storybook/addon-actions
+                - @storybook/addon-docs
+                - @storybook/addon-essentials
+                - @storybook/addon-interactions
+                - @storybook/addon-links
+                - @storybook/preset-create-react-app
+                - @storybook/react
+                - @storybook/react-webpack5
+                - @storybook/testing-library
+                - storybook
+                - storybook-addon-themes
+                - storybook-dark-mode
 
-### Types
+                ### Testing
 
--   @types/babel\_\_core
--   @types/connect
--   @types/jest
--   @types/node
--   @types/react
--   @types/react-dom
+                - @testing-library/dom
+                - @testing-library/jest-dom
+                - @testing-library/react
+                - @testing-library/user-event
+                - jest
+                - jest-environment-jsdom
+                - jest-junit
 
-## Peer Dependencies
+                ### Types
 
-### General
+                - @types/babel\_\_core
+                - @types/connect
+                - @types/jest
+                - @types/node
+                - @types/react
+                - @types/react-dom
 
--   @emotion/css
--   @emotion/react
--   @emotion/styled
--   @mui/icons-material
--   @mui/material
--   @mui/x-date-pickers
--   ag-grid-community
--   ag-grid-enterprise
--   ag-grid-react
--   date-fns
--   query-string
--   react
--   react-dom
--   react-dropzone
--   react-imask
--   react-merge-refs
--   react-router-dom
+                ## Peer Dependencies
+
+                ### General
+
+                - @emotion/css
+                - @emotion/react
+                - @emotion/styled
+                - @mui/icons-material
+                - @mui/material
+                - @mui/x-date-pickers
+                - ag-grid-community
+                - ag-grid-enterprise
+                - ag-grid-react
+                - date-fns
+                - query-string
+                - react
+                - react-dom
+                - react-dropzone
+                - react-imask
+                - react-merge-refs
+                - react-router-dom
+            </Grid>
+        </Grid>
+
+  </Container>
+
+</ThemeProvider>

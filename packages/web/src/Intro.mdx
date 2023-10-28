@@ -1,23 +1,25 @@
-import { Meta } from '@storybook/blocks';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
-import Alert from '@mui/material/Alert';
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import { MauiTheme } from '@creativelid/maui-styles';
-import { styled } from '@mui/material/styles';
-import { Divider } from '@creativelid/maui-web';
+import { Meta } from "@storybook/blocks";
 
-<Meta title='Introduction' />
+import { styled } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
+import Alert from "@mui/material/Alert";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+
+import { Divider } from "@creativelid/maui-web";
+import { MauiTheme } from "@creativelid/maui-styles";
+
+<Meta title="Introduction" />
 
 <ThemeProvider theme={MauiTheme}>
     <Container maxWidth='lg'>
         <Grid container spacing={2}>
             <Grid item xs={12}>
-                <Typography variant='h1' gutterBottom>Material Advanced User Interface (MAUI)</Typography>
+                <Typography variant='h3' component='h1' gutterBottom>Material Advanced User Interface (MAUI)</Typography>
 
                 <Typography variant='subtitle1' gutterBottom>MAUI is a component library that is based around [Material-UI (MUI)](https://mui.com/), which is a library of React UI components that implements Google's Material Design. MUI is an open-source React component library that implements [Google's Material Design](https://m2.material.io/). Learn more about [MUI](https://mui.com/material-ui/getting-started/).</Typography>
 
@@ -29,4 +31,5 @@ import { Divider } from '@creativelid/maui-web';
             </Grid>
         </Grid>
     </Container>
+
 </ThemeProvider>
