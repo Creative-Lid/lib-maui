@@ -1,5 +1,7 @@
 {
-  "author": "Creative Lid LLC",
+  "author": {
+    "name": "Creative Lid LLC"
+  },
   "description": "Material Advanced User Interface (MAUI) is a React component library based on MUI.",
   "devDependencies": {
     "chromatic": "^7.5.4",
@@ -20,7 +22,7 @@
   "name": "lib-maui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Creative-Lid/lib-maui"
+    "url": "git+https://github.com/Creative-Lid/lib-maui.git"
   },
   "scripts": {
     "build": "npm run clean:local && lerna run build",
@@ -35,7 +37,8 @@
     "new-version": "lerna version --conventional-commits --yes",
     "start-storybook": "cd packages/web && npm run start-storybook",
     "test": "lerna run test",
-    "postversion": "git push --follow-tags origin"
+    "postversion": "git push --follow-tags origin",
+    "chromatic": "npx chromatic --project-token=chpt_1018f4bb5454a11"
   },
   "sideEffects": false,
   "version": "0.0.2",
@@ -46,5 +49,11 @@
   },
   "dependencies": {
     "@creativelid/maui-web": "*"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Creative-Lid/lib-maui/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/Creative-Lid/lib-maui#readme",
+  "_id": "lib-maui@0.0.2"
 }
